@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Index | Webserv</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color: #000;
+		}
+		h1 {
+			color: #f4f4f4;
+			text-align: center;
+		}
+		p {
+			color: #666;
+			font-size: 1.2em;
+		}
+		a {
+			text-decoration: none;
+			color: #007BFF;
+		}
+		.buttons {
+			margin-top: 20px;
+			display: flex;
+			justify-content: center; /* Centrer les boutons */
+		}
+		.buttons a {
+			text-decoration: none;
+			color: white;
+			background-color: #007BFF;
+			padding: 10px 20px;
+			margin: 0 10px;
+			border-radius: 5px;
+			display: inline-block;
+		}
+		.buttons a:hover {
+			background-color: #0056b3;
+		}
+		.buttons a.back-to-main {
+			background-color: gray;
+		}
+		.buttons a.back-to-main:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>🍪 What do you want to do with your session cookie 🍪</h1>
+		<div class="buttons">
+			<a href="set_session_cookie.html" role="button">Take a position</a>
+			<a href="get_session_cookie.html" role="button">Test Server's memory</a>
+		</div>
+		<div class ="buttons">
+			<a href="../" class="back-to-main" role="button">Back to Cookie Menu</a>
+		</div>
+	</div>
+</body>
+</html>

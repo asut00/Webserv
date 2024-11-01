@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Afficher le Cookie | Webserv</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 20px;
+			background-color: #f4f4f4;
+			text-align: center;
+		}
+		h1 {
+			color: #333;
+		}
+		.message {
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			display: inline-block;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Vérification du Cookie</h1>
+	<div id="cookieMessage" class="message"></div>
+
+	<script>
+		function getCookie(name) {
+			const value = `; ${document.cookie}`;
+			const parts = value.split(`; ${name}=`);
+			if (parts.length === 2) return parts.pop().split(';').shift();
+		}
+
+		// Récupère la valeur du cookie 'username'
+		const username = getCookie('username');
+		const messageDiv = document.getElementById('cookieMessage');
+
+		if (username) {
+			messageDiv.innerHTML = `username is set on: <strong>${username}</strong>`;
+		} else {
+			messageDiv.innerHTML = "username is not set";
+		}
+	</script>
+</body>
+</html>

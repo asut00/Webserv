@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGI | Webserv</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+        h1 {
+            color: #f4f4f4;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="number"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+            width: 300px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px 0px 0px 0px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: grey;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .buttons a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>🧮 caesar cipher 🧮</h1>
+        <form action="php/test.php" method="GET">
+            <label for="text" style="color: #f4f4f4;">Sentence to code:</label>
+            <input type="text" id="text" name="text" required placeholder="Enter a string">
+			<label for="letter" style="color: #f4f4f4;">Key:</label>
+			<input type="text" id="letter" name="letter" maxlength="1" required placeholder="Enter a letter">
+            <button type="submit">Send</button>
+        </form>
+        <div class="buttons">
+            <a href="index_cgi.html" role="button">Back to Index</a>
+        </div>
+    </div>
+</body>
+</html>
