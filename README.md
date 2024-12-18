@@ -2,7 +2,8 @@
 
 **Webserv** is a lightweight HTTP server built in C++. This project challenges you to implement core HTTP functionalities and create a fully functional web server, adhering to the HTTP/1.1 specification.
 
-![Enregistrement de l’écran 2024-12-18 à 22 29 25](https://github.com/user-attachments/assets/4fc44360-7286-48ef-bc24-7252084259df)
+![Enregistrement de l’écran 2024-12-18 à 22 29 25 (1)](https://github.com/user-attachments/assets/0c2f23c9-58b5-4f12-9500-8541e3dc2df6)
+
 
 ## 📋 Table of Contents
 
