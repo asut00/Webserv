@@ -122,7 +122,7 @@ server {
    ```
 
 2. Test the server with its static website:
-   - If you use the `./config_file/default.conf` config file, the `http://localhost:8081` URL will redirect you a static website.
+   - If you use the `./config_file/default.conf` config file, the `http://localhost:8081` URL will redirect you to a static website.
    - This website allows any user to test the server's different features.
 
 3. Test error handling:
