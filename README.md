@@ -1,6 +1,6 @@
 # Webserv 🌐
 
-**Webserv** is a lightweight HTTP server built in C++. This project challenges you to implement core HTTP functionalities and create a fully functional web server, adhering to the HTTP/1.1 specification.
+**Webserv** is a lightweight HTTP server built in C++. The challenge of this project was to implement core HTTP functionalities and create a fully functional web server, adhering to the HTTP/1.1 specification.
 
 ![Enregistrement de l’écran 2024-12-18 à 22 29 25 (1)](https://github.com/user-attachments/assets/0c2f23c9-58b5-4f12-9500-8541e3dc2df6)
 
@@ -20,7 +20,7 @@
 
 ## Introduction
 
-The **Webserv** project is part of the [42 School](https://42.fr/) curriculum, where you learn how modern web servers work under the hood. You'll build a web server capable of handling HTTP requests, serving static files, managing CGI scripts, and supporting multiple clients concurrently.
+This project was a deep dive into the inner workings of how data is shared and communicated over the internet we rely on every day. We developed a fully functional web server that handles HTTP requests, serves static files, executes CGI scripts, and efficiently manages multiple client connections simultaneously. Through this project, I gained valuable insights into the foundational principles of web servers and network communication.
 
 This project emphasizes:
 - **Network programming**.
@@ -50,7 +50,7 @@ This project emphasizes:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/webserv.git
+   git clone https://github.com/asut00/webserv.git
    cd webserv
    ```
 
@@ -73,7 +73,7 @@ To start the server, provide a configuration file as an argument:
 
 ### Logs:
 
-The server logs incoming requests, responses, and errors to the console. You can redirect these logs to a file for debugging.
+The server logs incoming requests, responses, and errors to the console.
 
 ---
 
@@ -130,7 +130,7 @@ server {
 
 ### Load Testing:
 
-Use tools like [siege](https://github.com/JoeDog/siege), [ApacheBench](https://httpd.apache.org/docs/2.4/programs/ab.html) or [wrk](https://github.com/wg/wrk) to stress test your server:
+Use tools like [siege](https://github.com/JoeDog/siege), [ApacheBench](https://httpd.apache.org/docs/2.4/programs/ab.html) or [wrk](https://github.com/wg/wrk) to stress test the server:
 ```bash
 siege -b http://localhost:8081
 ```
@@ -167,9 +167,9 @@ ab -n 1000 -c 10 http://localhost:8081/
 
 ---
 
-## Author
+## Team
 
-- GitHub: [@asut00](https://github.com/asut00)  
-- 42 Intra: `asuteau`
+- [@atwazar](https://github.com/atwazar)
+- [@asut00](https://github.com/asut00)  
 
 ---
